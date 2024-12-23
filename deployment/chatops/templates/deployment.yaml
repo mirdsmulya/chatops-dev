@@ -5,9 +5,7 @@ metadata:
   labels:
     {{- include "chatops.labels" . | nindent 4 }}
 spec:
-  {{- if not .Values.autoscaling.enabled }}
   replicas: {{ .Values.replicaCount }}
-  {{- end }}
   selector:
     matchLabels:
       {{- include "chatops.selectorLabels" . | nindent 6 }}
