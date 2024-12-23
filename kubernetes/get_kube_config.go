@@ -8,7 +8,6 @@ import (
 )
 
 // get kubernetes config
-
 func GetKubeConfig() (*kubernetes.Clientset, error) {
 	config := rest.Config{}
 	cfg := &config
