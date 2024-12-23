@@ -23,13 +23,7 @@ podLabels: {}
 
 podSecurityContext: {}
 
-securityContext: 
-  capabilities:
-    drop:
-    - ALL
-  readOnlyRootFilesystem: true
-  runAsNonRoot: true
-  runAsUser: 10001
+securityContext: {}
 
 service:
   type: LoadBalancer
