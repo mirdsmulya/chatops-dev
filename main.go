@@ -37,7 +37,7 @@ func main() {
 	serverAddr := fmt.Sprintf(":%d", port)
 	log.Printf("Starting ChatOps service on port %d...", port)
 	if err := router.Run(serverAddr); err != nil {
-		log.Fatalf("Failed to start CubeFlow service: %v", err)
+		log.Fatalf("Failed to start Chatops service: %v", err)
 	}
 }
 
